@@ -4,7 +4,7 @@ import json
 def jprint(obj):
 
     text = json.dumps(obj, sort_keys=True, indent=4)
-    
+
     return text
 
 def jload(obj):
@@ -12,7 +12,7 @@ def jload(obj):
     loaded_json = json.loads(formatted_json)
 
     return loaded_json
-    
+
 
 def get_weather_json():
 
@@ -26,7 +26,7 @@ def get_weather_json():
 
     else :
 
-        print ("Unsuccessful Request with error code :"+response.status_code)
+        print ("Unsuccessful Request with error code :",response.status_code)
 
         return None
 
